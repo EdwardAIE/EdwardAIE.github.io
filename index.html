@@ -1,83 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-us">
   <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | gungame</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="http://EdwardAIE.github.io/Build/UnityLoader.js"></script>
+    <script>
+      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/New folder.json", {onProgress: UnityProgress});
+    </script>
+	<title>Chaos Shooter Game</title>
+		<style>
+			.SideMenu a {
 
-    <title>Coming Soon - Start Bootstrap Theme</title>
+   				padding: 6px 8px 6px 16px;
+  				text-decoration: none;
+  				font-size: 25px;
+ 			  	color: white;
+ 	  			display: block;
+				font-family: cursive;
+			}
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/coming-soon.min.css" rel="stylesheet">
-
+		</style>
   </head>
-
-  <body>
-
-    <div class="overlay"></div>
-    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-      <source src="mp4/bg.mp4" type="video/mp4">
-    </video>
-
-    <div class="masthead">
-      <div class="masthead-bg"></div>
-      <div class="container h-100">
-        <div class="row h-100">
-          <div class="col-12 my-auto">
-            <div class="masthead-content text-white py-5 py-md-0">
-              <h1 class="mb-3">Coming Soon!</h1>
-              <p class="mb-5">We're working hard to finish the development of this site. Our target launch date is
-                <strong>January 2019</strong>! Sign up for updates using the form below!</p>
-              <div class="input-group input-group-newsletter">
-                <input type="email" class="form-control" placeholder="Enter email..." aria-label="Enter email..." aria-describedby="basic-addon">
-                <div class="input-group-append">
-                  <button class="btn btn-secondary" type="button">Notify Me!</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <body style="background-color:#262626">
+  <div class="SideMenu"
+		style="
+			height: 100%;
+    			width: 160px;
+    			position: fixed;
+  			top: 0;
+   	 		left: 0;
+  			background-color: #3366ff;
+    			padding-top: 200px;
+		">
+			<a herf="Index.html">Home</a>
+			<a herf="about.html">About</a>
+			<a herf="WSR.html">Web Software Review</a>
+			<a herf="CSG.html">Chaos Shooter Game</a>
+		</div>
+		<div class="Header"
+		style="
+			height: 180px;
+    			width: 100%;
+    			position: fixed;
+  			top: 0;
+   	 		left: 0;
+  			background-color: #ff751a;
+		">
+			<h1 style="
+			
+			text-align: center;
+			color: white;
+			font-family:fantasy;
+			font-size:80;">Chaos Shooter !!!<h1>	
+		</div>
+		<div class="Main Content"
+		style="
+		margin-left: 160;
+		margin-top: 200;
+		">
+		
+		<div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">gungame</div>
       </div>
     </div>
-
-    <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="#">
-            <i class="fa fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/coming-soon.min.js"></script>
-
+		
+		</div>
+  
+  <p></P>
+    
   </body>
-
 </html>
