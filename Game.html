@@ -45,7 +45,7 @@
 		style="
 			height: 180px;
     			width: 100%;
-    			position: fixed;
+    			position: relative;
   			top: 0;
    	 		left: 0;
   			background-color: #ff751a;
@@ -57,20 +57,22 @@
 			font-family:fantasy;
 			font-size:80;">Chaos Shooter !!!<h1>	
 		</div>
-		<div class="Main Content"
-		style="
-		margin-left: 160;
-		margin-top: 200;
-		">
-		
-		<div class="webgl-content">
-      <div id="gameContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-        <div class="title">gungame</div>
-      </div>
-    </div>
+			<div class="Main Content" style="
+					margin-left: auto;
+					margin-right:  auto;
+					position: relative;
+					width: 1200px;
+					height: 700px;
+					">
+					
+					<div class="webgl-content">
+				  <div id="gameContainer" style="width: 960px; height: 600px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);"><canvas id="#canvas" width="960" height="600" style="cursor: default;"></canvas><div class="logo Dark" style="display: none;"></div><div class="progress Dark" style="display: none;"><div class="empty" style="width: 0%;"></div><div class="full" style="width: 100%;"></div></div></div>
+				  <div class="footer">
+					<div class="webgl-logo"></div>
+					<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+					<div class="title">gungame</div>
+			</div>
+			</div>
 		
 		</div>
   
